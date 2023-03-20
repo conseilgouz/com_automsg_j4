@@ -42,6 +42,7 @@
 			<filename>index.html</filename>
 			<folder>src</folder>
 			<folder>services</folder>
+			<folder>sql</folder>
 		</files>
 	</administration>
 	<changelogurl>https://raw.githubusercontent.com/conseilgouz/com_automsg_j4/master/com_automsg_changelog.xml</changelogurl>
