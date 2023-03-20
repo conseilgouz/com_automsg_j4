@@ -7,7 +7,7 @@
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<authorEmail>pascal.leconte@conseilgouz.com</authorEmail>
 	<authorUrl>www.conseilgouz.com</authorUrl>
-	<version>1.0.0</version>
+	<version>2.0.0</version>
 	<description>COM_AUTOMSG_XML_DESCRIPTION</description>
 	<namespace path="src">ConseilGouz\Component\Automsg</namespace>
 	<files folder="site">
@@ -20,7 +20,23 @@
 		<language tag="fr-FR">language/fr-FR/com_automsg.ini</language>
 		<language tag="fr-FR">language/fr-FR/com_automsg.sys.ini</language>
 	</languages>
-	
+    <install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql
+			</file>
+		</sql>
+	</install>
+    <uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql
+			</file>
+		</sql>
+	</uninstall>
+	<update>
+		<schemas>
+			<schemapath type="mysql">sql/updates</schemapath>
+		</schemas>
+	</update>
 	<administration>
 		<files folder="admin">
 			<filename>index.html</filename>

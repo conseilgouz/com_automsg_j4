@@ -2,6 +2,17 @@
 	<changelog>
 		<element>automsg</element>
 		<type>component</type>
+		<version>2.0.0</version>
+        <note>
+            <item>Update : 20/03/2023</item>
+        </note>
+        <addition>
+			<item>create table automsg</item>
+        </addition>
+	</changelog>
+	<changelog>
+		<element>automsg</element>
+		<type>component</type>
 		<version>1.0.0</version>
         <note>
             <item>Update : 19/03/2023</item>
