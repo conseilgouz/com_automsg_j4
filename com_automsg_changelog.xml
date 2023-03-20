@@ -1,0 +1,13 @@
+<changelogs>
+	<changelog>
+		<element>automsg</element>
+		<type>component</type>
+		<version>1.0.0</version>
+        <note>
+            <item>Update : 19/03/2023</item>
+        </note>
+        <addition>
+			<item>new component</item>
+        </addition>
+	</changelog>
+</changelogs>
