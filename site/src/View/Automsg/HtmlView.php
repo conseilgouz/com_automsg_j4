@@ -103,11 +103,11 @@ class HtmlView extends BaseHtmlView
             $app->setHeader('status', 403, true);
             throw new GenericDataException(implode("\n", $this->get('Errors')), 403);
         }
-        if (!$this->data) {
+        /*if (!$this->data && $this->_layout == "edit") {
             $app   =Factory::getApplication();
             $app->setHeader('status', 403, true);
             throw new GenericDataException(Text::_('COM_AUTOMSG_NOT_FOUND'), 403);
-        }
+        }*/
         $this->prepareDocument();
 
         parent::display($tpl);

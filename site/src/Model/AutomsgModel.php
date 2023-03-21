@@ -213,13 +213,9 @@ class AutomsgModel extends FormModel
         }
         // Load the users plugin group.
         PluginHelper::importPlugin('user');
-        if (!$user->save()) {
-            $this->setError($user->getError());
-            
-            return false;
-        }
-        
-        
+        // automsg parameter is updated in plugin
+        $prop = $user->getProperties();
+        $result = Factory::getApplication()->triggerEvent('onUserAfterSave', [$prop, false, true, $this->getError()]);
         return $user->id;
     }
 

@@ -2,6 +2,17 @@
 	<changelog>
 		<element>automsg</element>
 		<type>component</type>
+		<version>2.0.1</version>
+        <note>
+            <item>Update : 21/03/2023</item>
+        </note>
+        <fix>
+			<item>complete/cancel view</item>
+        </fix>
+	</changelog>
+	<changelog>
+		<element>automsg</element>
+		<type>component</type>
 		<version>2.0.0</version>
         <note>
             <item>Update : 20/03/2023</item>

@@ -106,6 +106,7 @@ class AutomsgController extends BaseController
 
         // Attempt to save the data.
         $return = $model->save($data);
+        
         if ($return) $automsgtoken = $this->getTokenFromId($return);
         // Check for errors.
         if ($return === false) {
@@ -121,7 +122,7 @@ class AutomsgController extends BaseController
         }
 
         $this->setMessage(Text::_('COM_AUTOMSG_SAVE_SUCCESS'));
-        $redirect = 'index.php?option=com_automsg&view=automsg&layout=edit&token=' . $automsgtoken;
+        $redirect = 'index.php?option=com_automsg&view=automsg&layout=complete';
         $this->setRedirect(Route::_($redirect, false));
 
         // Flush the data from the session.
