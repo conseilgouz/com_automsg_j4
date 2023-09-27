@@ -1,5 +1,10 @@
 <?php
-
+/**
+ * Automsg Component  - Joomla 4.x/5.x Component 
+ * @license https://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ * @copyright (c) 2023 ConseilGouz. All Rights Reserved.
+ * @author ConseilGouz 
+**/
 namespace ConseilGouz\Component\Automsg\Site\Model;
 
 use Joomla\CMS\Access\Access;
@@ -75,7 +80,10 @@ class AutomsgModel extends FormModel
         if ($this->data === null) {
             $userId = $this->getState('com_automsg.automsg.automsg.id');
 
-            if (!$userId) return false;
+            if (!$userId) {
+                $user = Factory::getApplication()->getIdentity();
+                $userId = $user->id;
+            }
             // Initialise the table with Joomla\CMS\User\User.
             $this->data = new User($userId);
 

@@ -2,6 +2,17 @@
 	<changelog>
 		<element>automsg</element>
 		<type>component</type>
+		<version>2.1.0</version>
+        <note>
+            <item>Update : 27/09/2023</item>
+        </note>
+        <fix>
+			<item>Suppress undefined notices</item>
+        </fix>
+	</changelog>
+	<changelog>
+		<element>automsg</element>
+		<type>component</type>
 		<version>2.0.2</version>
         <note>
             <item>Update : 25/03/2023</item>

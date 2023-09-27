@@ -1,11 +1,17 @@
 <?php
-
+/**
+ * Automsg Component  - Joomla 4.x/5.x Component 
+ * @license https://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ * @copyright (c) 2023 ConseilGouz. All Rights Reserved.
+ * @author ConseilGouz 
+**/
 defined('_JEXEC') or die;
 
 use Joomla\CMS\Factory;
 use Joomla\CMS\HTML\HTMLHelper;
 use Joomla\CMS\Language\Text;
 use Joomla\CMS\Router\Route;
+use Joomla\CMS\Component\ComponentHelper;
 
 /** @var Joomla\Component\Users\Site\View\Profile\HtmlView $this */
 
@@ -16,6 +22,7 @@ $wa = $this->document->getWebAssetManager();
 $wa->useScript('keepalive')
     ->useScript('form.validate');
 
+$params = ComponentHelper::getParams('com_automsg'); 
 ?>
 <legend><?php echo $params['legend']; ?></legend>
 <div class="automsg_cancel row">

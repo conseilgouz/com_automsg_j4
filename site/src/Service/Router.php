@@ -1,13 +1,10 @@
 <?php
-
 /**
- * @package     Joomla.Site
- * @subpackage  com_users
- *
- * @copyright   (C) 2009 Open Source Matters, Inc. <https://www.joomla.org>
- * @license     GNU General Public License version 2 or later; see LICENSE.txt
- */
-
+ * Automsg Component  - Joomla 4.x/5.x Component 
+ * @license https://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ * @copyright (c) 2023 ConseilGouz. All Rights Reserved.
+ * @author ConseilGouz 
+**/
 namespace ConseilGouz\Component\Automsg\Site\Service;
 
 use Joomla\CMS\Application\SiteApplication;
